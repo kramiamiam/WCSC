@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WCSC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/connexion.css">
+    <script src="../scripts/navigation.js"></script>
+</head>
+<body>
+    <header>
+        <nav aria-label="Main Navigation" class="nav-container">
+            <div class="site-name">
+                <a href="../accueil.html">
+                    <img src="../images/logoText.png" alt="Logo texte de Warrior Colosseum Sports Center" class="site-logo">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../accueil.html">Accueil</a></li>
+                <li><a href="football.html">Football</a></li>
+                <li><a href="basket.html">Basketball</a></li>
+                <li><a href="tennis.html">Tennis</a></li>
+                <li><a href="piscine.html">Piscine</a></li>
+                <li><a href="gym.html">Gym</a></li>
+                <li><a href="resto.html">Restaurant</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Toggle Navigation Menu">Menu</button>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <form id="login-form" action="traitement.php" method="POST">
+                <div class="form-group">
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" >
+                </div>
+                <div class="form-group">
+                    <label for="motdepasse">Mot de passe :</label>
+                    <input type="password" id="motdepasse" name="motdepasse" >
+                </div>
+                <div class="form-group">
+                    <button type="submit">Connexion</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-section">
+            <h3>ACTIVITÉS</h3>
+            <ul>
+                <li><a href="#">Index des activités (catalogue en preparation)</a></li>
+                <li><a href="basket.html">Activité en vedette</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>RESSOURCES</h3>
+            <ul>
+                <li><a href="map.html">Services</a></li>
+                <li><a href="inscription.html">Formulaire d'inscription</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>À PROPOS</h3>
+            <ul>
+                <li><a href="conditions.html">Conditions d'utilisation</a></li>
+                <li><a href="politique.html">Politique de confidentialité</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="../scripts/validation.js"></script>
+    <script src="../scripts/navigation.js"></script>
+</body>
+</html>

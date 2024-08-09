@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WCSC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/inscription.css">
+    <script src="../scripts/validation.js"></script>
+    <script src="../scripts/navigation.js"></script>
+</head>
+<body>
+    <header>
+        <nav aria-label="Main Navigation" class="nav-container">
+            <div class="site-name">
+                <a href="../accueil.html">
+                    <img src="../images/logoText.png" alt="Logo texte de Warrior Colosseum Sports Center" class="site-logo">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../accueil.html">Accueil</a></li>
+                <li><a href="football.html">Football</a></li>
+                <li><a href="basket.html">Basketball</a></li>
+                <li><a href="tennis.html">Tennis</a></li>
+                <li><a href="piscine.html">Piscine</a></li>
+                <li><a href="gym.html">Gym</a></li>
+                <li><a href="resto.html">Restaurant</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Toggle Navigation Menu">Menu</button>
+            <a href="connexion.html" class="sign-in">Connexion</a>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <form id="signup-form" action="traitement.php" method="POST">
+                <div class="form-group">
+                    <label for="nom">Nom :</label>
+                    <input type="text" id="nom" name="nom" >
+                </div>
+                <div class="form-group">
+                    <label for="Prenom">Prénom :</label>
+                    <input type="text" id="Prenom" name="Prenom" >
+                </div>
+                <div class="form-group">
+                    <label for="datenaissance">Date de naissance :</label>
+                    <input type="date" id="datenaissance" name="datenaissance" >
+                </div>
+                <div class="form-group">
+                    <label>Sexe :</label>
+                    <div>
+                        <input type="radio" id="homme" name="sexe" value="Homme" >
+                        <label for="homme">Homme</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="femme" name="sexe" value="Femme" >
+                        <label for="femme">Femme</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="autre" name="sexe" value="Autre" >
+                        <label for="autre">Autre</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" >
+                </div>
+                <div class="form-group">
+                    <label for="motdepasse">Mot de passe :</label>
+                    <input type="password" id="motdepasse" name="motdepasse" >
+                </div>
+                <div class="form-group">
+                    <label for="confirmation">Confirmation du mot de passe :</label>
+                    <input type="password" id="confirmation" name="confirmation" >
+                </div>
+                <div class="form-group">
+                    <button type="submit">Je m'inscris !</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-section">
+            <h3>ACTIVITÉS</h3>
+            <ul>
+                <li><a href="#">Index des activités (catalogue en preparation)</a></li>
+                <li><a href="basket.html">Activité en vedette</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>RESSOURCES</h3>
+            <ul>
+                <li><a href="map.html">Services</a></li>
+                <li><a href="inscription.html">Formulaire d'inscription</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>À PROPOS</h3>
+            <ul>
+                <li><a href="conditions.html">Conditions d'utilisation</a></li>
+                <li><a href="politique.html">Politique de confidentialité</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

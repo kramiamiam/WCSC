@@ -1,0 +1,192 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    line-height: 1.2;
+    color: #202228;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+    background-color: black;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.site-logo {
+    height: 40px; 
+    margin-right: 10px; 
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.nav-links a {
+    color: #f0f0f0; 
+    text-decoration: none;
+    font-weight: 500;
+    text-shadow: 1px 1px 2px #000;
+    padding: 10px 20px;
+}
+.nav-links-active {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background-color: beige;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+
+.sign-in {
+    background: beige;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold; 
+}
+
+.checkmark-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 89vh;
+    background-color: #f0f0f0;
+}
+
+  .checkmark {
+    width: 80px;
+    height: 130px;
+    position: relative;
+   }
+
+  .checkmark:before, .checkmark:after {
+    content: '';
+    position:absolute;
+    background-color: #1fbf55; 
+  }
+
+  .checkmark:before {
+    top: 0px;    
+    right: 270px;
+    width: 10px;
+    height: 320px;
+    transform: rotate(45deg);
+    border-radius: 100%
+
+  }
+
+  .checkmark:after {
+    top: 186px;
+    right: 420px;   
+    width: 10px;
+    height: 100px;
+    transform: rotate(-45deg);
+    border-radius: 100%
+  }
+
+  div.info{
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 320px;
+    font-size: 40px;
+  }
+  footer {
+    background: #202228;
+    color: white;
+    padding: 2.5rem 1.25rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: auto;
+}
+ 
+.footer-section {
+    margin-bottom: 1.25rem;
+}
+ 
+.footer-section h3 {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: white;
+    margin-bottom: 1.25rem;
+}
+ 
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+ 
+.footer-section ul li {
+    margin-bottom: 0.625rem;
+}
+ 
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+       
+    }
+    .nav-links li {
+        margin-bottom: 10px;
+    }
+    .hero {
+        flex-direction: column;
+    }
+    .map {
+        flex-direction: column;
+        align-items: center;
+    }
+    .presentation-map,
+    .image-map {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    .nav-links-active {
+        display: flex;
+    }
+    .nav-toggle {
+        display: block;
+    }
+}
