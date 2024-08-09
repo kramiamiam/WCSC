@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WCSC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/accueil.css">
+    <script src="scripts/navigation.js"></script>
+</head>
+<body>
+    <header>
+        <nav aria-label="Main Navigation" class="nav-container">
+            <div class="site-name">
+                <a href="accueil.html">
+                    <img src="images/logoText.png" alt="Logo texte de Warrior Colosseum Sports Center" class="site-logo">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="accueil.html">Accueil</a></li>
+                <li><a href="html/football.html">Football</a></li>
+                <li><a href="html/basket.html">Basketball</a></li>
+                <li><a href="html/tennis.html">Tennis</a></li>
+                <li><a href="html/piscine.html">Piscine</a></li>
+                <li><a href="html/gym.html">Gym</a></li>
+                <li><a href="html/resto.html">Restaurant</a></li>
+                <li><a href="html/jeu.html">Amuses-toi!</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Toggle Navigation Menu">Menu</button>
+            <a href="html/connexion.html" class="sign-in">Connexion</a>
+            
+        </nav>
+    </header>
+    <main id="main-content">
+        <section class="hero">
+            <h1><img src="../TEST/images/WCSClogo.png" alt="Logo de Warrior Colosseum Sports Center"></h1>
+        </section>
+        <section class="presentation">
+            <div class="presentation-box">
+                <h2>QUI SOMMES-NOUS ?</h2>
+                <p>Nous sommes un centre sportif offrant une variété d'activités pour tous les âges et niveaux.</p>
+                <ul>
+                    <li>Installations modernes pour le football, le basketball, le tennis, et plus encore.</li>
+                    <li>Entraîneurs professionnels disponibles pour vous aider à atteindre vos objectifs.</li>
+                    <li>Un environnement accueillant et convivial.</li>
+                </ul>
+            </div>
+            <div class="presentation-box">
+                <h2>NOUS REJOINDRE</h2>
+                <p>Rejoignez notre communauté sportive et bénéficiez de nombreux avantages.</p>
+                <p>Créez un compte pour accéder à nos ressources et outils exclusifs.</p>
+                <p>Reductions disponibles pour les seniors et les étudiants.</p>
+                <a href="../TEST/html/inscription.html" class="btn register">Devenez un Warrior maintenant !</a>
+            </div>
+        </section>
+        <section class="activites">
+            <h2>CE QUE NOUS PROPOSONS</h2>
+            <div class="wrapper">
+                <div class="container">
+                    <input type="radio" name="slide" id="card1" checked>
+                    <label for="card1" class="card card1">
+                        <a href="../TEST/html/football.html" class="card-link"></a>
+                        <div class="row">
+                            <div class="description">
+                                <h4>Football</h4>
+                                <p>Découvrez notre terrain de football de qualité professionnelle.</p>
+                            </div>
+                        </div>
+                    </label>
+
+                    <input type="radio" name="slide" id="card2">
+                    <label for="card2" class="card card2">
+                        <a href="../TEST/html/basket.html" class="card-link"></a>
+                        <div class="row">
+                            <div class="description">
+                                <h4>Basketball</h4>
+                                <p>Rejoignez nos équipes et participez à des tournois passionnants.</p>
+                            </div>
+                        </div>
+                    </label>
+
+                    <input type="radio" name="slide" id="card3">
+                    <label for="card3" class="card card3">
+                        <a href="../TEST/html/tennis.html" class="card-link"></a>
+                        <div class="row">
+                            <div class="description">
+                                <h4>Tennis</h4>
+                                <p>Entraînez-vous sur nos courts de tennis de haute qualité.</p>
+                            </div>
+                        </div>
+                    </label>
+
+                    <input type="radio" name="slide" id="card4">
+                    <label for="card4" class="card card4">
+                        <a href="../TEST/html/piscine.html" class="card-link"></a>
+                        <div class="row">
+                            <div class="description">
+                                <h4>Piscine</h4>
+                                <p>Profitez de notre piscine intérieure pour nager toute l'année.</p>
+                            </div>
+                        </div>
+                    </label>
+
+                    <input type="radio" name="slide" id="card5">
+                    <label for="card5" class="card card5">
+                        <a href="../TEST/html/gym.html" class="card-link"></a>
+                        <div class="row">
+                            <div class="description">
+                                <h4>Gym</h4>
+                                <p>C'est là que les Warriors sont faits.</p>
+                            </div>
+                        </div>
+                    </label>
+
+                    <input type="radio" name="slide" id="card6">
+                    <label for="card6" class="card card6">
+                        <a href="../TEST/html/resto.html" class="card-link"></a>
+                        <div class="row">
+                            <div class="description">
+                                <h4>Restaurant</h4>
+                                <p>Mangez sain chez notre Restaurant diététique "Le Guerrier".</p>
+                            </div>
+                        </div>
+                    </label>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-section">
+            <h3>ACTIVITÉS</h3>
+            <ul>
+                <li><a href="#">Index des activités (catalogue en preparation)</a></li>
+                <li><a href="../TEST/html/basket.html">Activité en vedette</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>RESSOURCES</h3>
+            <ul>
+                <li><a href="../TEST/html/map.html">Services</a></li>
+                <li><a href="../TEST/html/inscription.html">Formulaire d'inscription</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>À PROPOS</h3>
+            <ul>
+                <li><a href="html/conditions.html">Conditions d'utilisation</a></li>
+                <li><a href="html/politique.html">Politique de confidentialité</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
